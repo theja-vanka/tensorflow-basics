@@ -1,8 +1,9 @@
 import os
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 import tensorflow as tf
 
-x = tf.constant(4, shape=(1,1), dtype=tf.float32)
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+
+x = tf.constant(4, shape=(1, 1), dtype=tf.float32)
 print(x)
 
 y = tf.constant([1, 2, 3])
@@ -26,5 +27,5 @@ print(x)
 x = tf.random.uniform((3, 3), minval=0, maxval=1)
 print(x)
 
-x= tf.range(10)
+x = tf.range(10)
 print(x)
